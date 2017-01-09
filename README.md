@@ -1,13 +1,10 @@
-# JavaScript TDD
-Presentation to a talk about about test driven development with JavaScript.
+# End2End Testing with Protractor
+Presentation to a talk about about end2end testing with protractor.
 
 ## Content
-1. Prejudices
-1. Unit Testing
-1. Test Driven Development
-1. Setup
-1. TDD Kata
-
-## Example Setup
-The example setup can be found under `tdd-setup` in this repository.
-For the sake of simplicity there is no module bundler like webpack, nore a transpiler for ES6 support.
+1. E2E
+1. Protractor ?!
+1. Quick Start
+1. Page Object Test Architecture
+1. "Base" Page Object Test Architecture
+1. Best Practices

@@ -66,3 +66,13 @@ export function logOut(): void {
     expect(loginPage.usernameInput.isPresent()).toBeTruthy();
 }
 ```
+
+---
+
+> Take care that you can run multiple instances of the same test in parallel
+
+(e.g. scoping your test resources with random created names)
+
+ ![random-name](./slides/img/add-project.png)
+
+ 

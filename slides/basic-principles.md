@@ -1,4 +1,4 @@
-# Best practices
+# Basic principles
 
 ---
 > Do not cheat on your tests
@@ -13,7 +13,7 @@
 
 
 ---
-> Create PageObjects for all components e.g. menus, dropdowns, etc...
+> Create PageObjects for all components, e.g. menus, dropdowns, etc...
 
 ---
 > Do not add any assertions in your Page Object definitions

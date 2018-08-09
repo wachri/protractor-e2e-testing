@@ -9,15 +9,15 @@ https://www.techopedia.com/definition/7035/end-to-end-test
 ---
 ### In other words you test
 
-* The hole integration of all components including Browser, Http, App, Database, ...
+* The whole integration of all components, including Browser, Http, App, Database, ...
 * The test acts like a user
 
 ---
 ### Advantages
 
-* The the hole integration of all components is tested like a user would navigate through the site
-* Are running automatically
-* Are faster than manually testing
+* The whole integration of all components is tested like a user would navigate through the site
+* Tests are running automatically
+* Faster than manually testing
 * Increase the confidence in the application
 * Parts of an application which are hard to unit test can be automatically tested, too
 
@@ -26,4 +26,4 @@ https://www.techopedia.com/definition/7035/end-to-end-test
 
 * Sometimes it can be extremely hard to get reproducible test results
 * They are relatively slow
-* Sometimes it's more like try and error during developing an end2end test
+* Sometimes it's more like try and error during developing an e2e test

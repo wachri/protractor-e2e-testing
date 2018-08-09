@@ -347,7 +347,7 @@
      * Loads the dependencies of reveal.js. Dependencies are
      * defined via the configuration option 'dependencies'
      * and will be loaded prior to starting/binding reveal.js.
-     * Some dependencies may have an 'async' flag, if so they
+     * Some dependencies may have an 'async.md' flag, if so they
      * will load after reveal.js has been started up.
      */
 	function load() {
@@ -2211,7 +2211,7 @@
 			// Reset all slides upon navigate to home
 			// Issue: #285
 			if ( dom.wrapper.querySelector( HOME_SLIDE_SELECTOR ).classList.contains( 'present' ) ) {
-				// Launch async task
+				// Launch async.md task
 				setTimeout( function () {
 					var slides = toArray( dom.wrapper.querySelectorAll( HORIZONTAL_SLIDES_SELECTOR + '.stack') ), i;
 					for( i in slides ) {

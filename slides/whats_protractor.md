@@ -1,19 +1,28 @@
-## Protractor?!!
+## Protractor
 
 ---
 ### What's protractor?
-> Protractor is an end-to-end test framework for AngularJS applications. Protractor runs tests against your application running in a real browser, interacting with it as a user would.
+> Protractor is an end-to-end test framework for Angular applications. Protractor runs tests against your application running in a real browser, interacting with it as a user would.
 
 ---
-> ... but works although on non angular pages!
+> ... but works also on non angular pages!
 
 ---
-### Setup
 
-[https://lh6.googleusercontent.com/-57e_I3NlcRQ/VTLHygh_5_I/AAAAAAAACKo/kLsPoEw5CPI/w1024-h768-no/Protractor.jpg](https://lh6.googleusercontent.com/-57e_I3NlcRQ/VTLHygh_5_I/AAAAAAAACKo/kLsPoEw5CPI/w1024-h768-no/Protractor.jpg)
+### First test
 
----
-### Testing in the CI
+```
+describe('Protractor Demo App', function() {
+  it('should add one and two', function() {
+    browser.get('http://juliemr.github.io/protractor-demo/');
+    element(by.model('first')).sendKeys(1);
+    element(by.model('second')).sendKeys(2);
 
-* For testing in the CI we can use Browserstack or Source Labs (or a browser must be available on the testing node)
-* The page you like to test needs to be accessible from the internet
+    element(by.id('gobutton')).click();
+
+    expect(element(by.binding('latest')).getText()).
+        toEqual('5'); // This is wrong!
+  });
+});
+```
+(quick but not recommended )
